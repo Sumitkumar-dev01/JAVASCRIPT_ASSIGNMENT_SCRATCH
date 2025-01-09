@@ -45,3 +45,20 @@ const orderList = [
 let sum1 = 0;
 orderList.forEach((data)=>(sum1+=data.price));
 console.log(`the total price is equal to ${sum1}`);
+
+
+
+// let's understand function and arrow function 
+
+function hello(){
+    console.log("hey good morning");
+    return hello;
+
+}
+
+hello();
+
+let hello1 = () => {
+    console.log("hey good morning once again with arrow function ");
+}
+hello1();

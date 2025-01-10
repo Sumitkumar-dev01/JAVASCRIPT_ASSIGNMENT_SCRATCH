@@ -28,8 +28,9 @@ orderlist.forEach((data) => (sum+= data.price));
 console.log(`the total price is ${sum}`);
 
 
-
-
+fetch("")
+.then(res.json())
+.then(data() = console.log(data));
 
 
 

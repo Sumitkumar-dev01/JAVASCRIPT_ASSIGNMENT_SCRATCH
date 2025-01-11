@@ -28,9 +28,9 @@ orderlist.forEach((data) => (sum+= data.price));
 console.log(`the total price is ${sum}`);
 
 
-fetch("")
-.then(res.json())
-.then(data() = console.log(data));
+// fetch("")
+// .then(res.json())
+// .then(data() = console.log(data));
 
 
 
@@ -61,5 +61,10 @@ hello();
 
 let hello1 = () => {
     console.log("hey good morning once again with arrow function ");
+    return hello1;
 }
 hello1();
+
+
+
+

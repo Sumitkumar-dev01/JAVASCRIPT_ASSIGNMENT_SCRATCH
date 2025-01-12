@@ -43,7 +43,7 @@ const orderList = [
     {name: "adaptor",price : 1223}
 ]
 
-let sum1 = 0;
+let sum2 = 0;
 orderList.forEach((data)=>(sum1+=data.price));
 console.log(`the total price is equal to ${sum1}`);
 
@@ -67,4 +67,11 @@ hello1();
 
 
 
+
+
+
+
+let sum1= 0;
+orderlist.forEach((data) => (sum+= data.price));
+console.log(`the total price is ${sum}`);
 

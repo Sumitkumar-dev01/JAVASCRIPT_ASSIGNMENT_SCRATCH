@@ -22,19 +22,62 @@
 
 // creating map 
 
-const  map = new Map();
+// const  map = new Map();
+// map.set("sumit",{
+//     name: "sumit kumar",
+//     age: 21,
+//     email: "sumitkum803202@gmail.com",
+//     location: "xyz"
+// });
+
+// function retrieve(name){
+//     return map.get(name);
+
+// }
+// console.log(retrieve("sumit"));
+
+
+
+
+
+
+// const map = new Map();
+// // retrieving contact details by name 
+
+// map.set("sumit",{
+//     name:"sumit",
+//     age:22,
+//     email:"abcd@gmail.com",
+//     location:"patna",
+// })
+
+// function retrieving_details(name){
+//     map.get(name);
+//     map.get(age);
+//     map.get(email);
+//     map.get(location);
+// }
+// retrieving_details("sumit");
+
+
+
+
+
+const map = new Map();
 map.set("sumit",{
-    name: "sumit kumar",
-    age: 21,
-    email: "sumitkum803202@gmail.com",
-    location: "xyz"
+    name:"sumit",
+    age:22,
+    email:"abcd@gmail.com",
+    location:"patna"
 });
 
-function retrieve(name){
+function getContact(name){
     return map.get(name);
-
 }
-console.log(retrieve("sumit"));
+getContact("sumit");
+console.log(getContact("sumit"));
+
+
 
 
 

@@ -58,3 +58,6 @@ let person2 = {
 
 printFullName.call(person1,"vishwa Mohan");
 printFullName.call(person2,"pratik maheswari");
+
+
+

@@ -80,4 +80,17 @@ console.log(getContact("sumit"));
 
 
 
+const map1 = new Map();
+map1.set("sumit",{
+    name:"sumit",
+    age:22,
+    email:"abcd@gmail.com",
+    location:"patna"
+})
+
+function getContact(name){
+    return map.get(name);
+}
+getContact("sumit");
+console.log(getContact("sumit"))
 

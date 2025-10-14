@@ -5,3 +5,9 @@ function random(){
 }
 random()
 
+
+function random2(){
+    setInterval(() => {
+        console.log("hello world once again");
+    }, 2000);
+}

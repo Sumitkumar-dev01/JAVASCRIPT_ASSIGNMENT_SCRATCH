@@ -178,3 +178,23 @@ nums.forEach((num) =>{
 })
 
 console.log(evnes);
+
+
+
+
+
+
+
+
+
+
+
+// revision of question 1
+
+const ordersList33 = [
+    {name:"Laptop",price:12000},
+    {name:"Laptop",price:12000},
+    {name:"Laptop",price:12000},
+    {name:"Laptop",price:12000}
+]
+

@@ -63,27 +63,30 @@ names.forEach((name,index)=>{
 })
 
 
-/**
- * 
- * 🟡 5. Conditional Check in forEach
 
-👉 Kuch elements par condition lagana.
 
-Question:
+
+
+
+
+
+/*Question:
 Ek array const nums = [5, 10, 15, 20, 25] diya gaya hai.
 forEach ka use karke sirf un numbers ko print karo jo 15 se bade hain.
+*/
 
-✅ Expected Output:
+const nums = [5,10,15,20,25];
+nums.forEach((num)=>{
+  if(num>15){
+    console.log(num);
+  }
+})
 
-20  
-25
 
-🟡 6. Object ke Array par forEach
 
-👉 forEach sirf numbers ya strings par nahi, objects par bhi lagta hai.
 
-Question:
-Ek array hai:
+/**
+ * Ek array hai:
 
 const users = [
   {name: 'Sumit', age: 21},
@@ -93,38 +96,48 @@ const users = [
 
 
 forEach ka use karke sab users ke name ko print karo.
+ */
 
-✅ Expected Output:
 
-Sumit  
-Aman  
-Riya
+const users = [
+  {name:"sumit",age:21},
+  {name:"Aman",age:25},
+  {name:"riya",age:20}
+]
 
+users.forEach((data)=>console.log(data.name));
+
+
+/**
+ * 
 🟡 7. Nested forEach Loop
-
 👉 Ek array ke andar dusra array ho to nested forEach kaise use karein.
 
 Question:
 
+js
+Copy code
 const matrix = [
   [1, 2],
   [3, 4],
   [5, 6]
 ];
-
-
 forEach ka use karke sab numbers ko print karo.
 
-✅ Expected Output:
 
-1  
-2  
-3  
-4  
-5  
-6
+ */
 
-🟡 8. Copying Array with forEach
+const matrix = [
+  [1,2],
+  [3,4],
+  [5,6]
+]
+
+matrix.forEach((data)=>console.log(data));
+
+
+/**
+ * 🟡 8. Copying Array with forEach
 
 👉 Ek naye array mein values push karna using forEach.
 
@@ -135,32 +148,36 @@ forEach ka use karke doubledNums naam ka naya array banao jisme har value ka dou
 ✅ Expected Output:
 
 [2, 4, 6]
-
-🟡 9. forEach vs map Confusion Check
-
-👉 forEach value return nahi karta.
-
-Question:
-Agar aap forEach ka result kisi variable mein store karo:
-
-const result = arr.forEach(num => num * 2);
-console.log(result);
-
-
-to output kya hoga?
-
-✅ Expected Output:
-
-undefined
-
-🟡 10. Break ya return in forEach
-
-👉 forEach mein break nahi chalta — tricky question.
-
-Question:
-Agar aap forEach mein return ya break lagate ho to kya hoga?
-Ek array const arr = [1, 2, 3, 4] mein agar element 3 aate hi loop ko break karna ho to kya karein?
-
-✅ Answer:
-forEach mein aap break nahi kar sakte. Iske liye for...of ya some ya every use karte hain.
  */
+
+
+
+const number = [1,2,3];
+doubleNUMS = [];
+number.forEach((nums)=>{
+  doubleNUMS.push(nums*2)
+});
+console.log(doubleNUMS);
+
+
+
+/**
+ * for each ka result kisi variable mein store karne par woh undefined output deta hain 
+ * 
+ */
+
+const result = arr.forEach(num => num*2);
+console.log(result)
+
+
+
+// break is not allowed in foreach so we have to use for of loop 
+
+const arr1 = [1,2,3,4];
+for(const num of arr){
+  if(num ==3){
+    break;
+  }
+  console.log(num);
+} 
+

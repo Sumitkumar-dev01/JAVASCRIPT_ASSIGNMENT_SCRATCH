@@ -179,5 +179,5 @@ for(const num of arr){
     break;
   }
   console.log(num);
-} 
+}
 

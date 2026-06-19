@@ -6,18 +6,23 @@ const orderList = [
 ]
 
 
+
 let sum = 0;
 orderList.forEach((data)=> sum = sum+data.price);
 console.log(`the price of order list is ${sum}`);
 
+
+
 const arr = [1,2,3,4,5];
 arr.forEach((num)=> console.log(num));
+
 
 
 const numbers = [10,20,30,40,50]
 let summation = 0;
 numbers.forEach((data)=>summation = summation+data)
 console.log(summation);
+
 
 
 const fruits = ["apple","banana","mango"]
@@ -38,6 +43,7 @@ nums.forEach((num)=>{
     }
 })
 
+
 const users = [
     {name:"sumit",age:21},
     {name:"aman",age:25},
@@ -55,12 +61,14 @@ const matrix = [
 
 matrix.forEach((data)=> console.log(data));
 
+
 const number = [1,2,3];
 doubleNums = [];
 numbers.forEach((nums)=>{
     doubleNums.push(nums*2)
 })
 console.log(doubleNums);
+
 
 const arr1 = [1,2,3,4];
 for(const num of arr){
@@ -69,5 +77,3 @@ for(const num of arr){
     }
     console.log(num);
 }
-
-
